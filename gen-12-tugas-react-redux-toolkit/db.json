@@ -1,0 +1,313 @@
+{
+  "users": [
+    {
+      "name": "Ash Blossom & Joyous Spring",
+      "rarity": "UR",
+      "image": "https://s3.duellinksmeta.com/cards/60c2b3a9a0e24f2d54a515b1_w360.webp",
+      "type": "Normal",
+      "desc": "When a card or effect is activated that includes any of these effects (Quick Effect): You can discard this card; negate that effect. ● Add a card from the Deck to the hand. ● Special Summon from the Deck. ● Send a card from the Deck to the GY. You can only use this effect of \"Ash Blossom & Joyous Spring\" once per turn.",
+      "TypeDeck": "Main",
+      "id": 1000001
+    },
+    {
+      "name": "Nibiru, the Primal Being",
+      "rarity": "UR",
+      "image": "https://s3.duellinksmeta.com/cards/60c2b3aba0e24f2d54a52e1e_w360.webp",
+      "type": "Normal",
+      "desc": "During the Main Phase, if your opponent Normal or Special Summoned 5 or more monsters this turn (Quick Effect): You can Tribute as many face-up monsters on the field as possible, and if you do, Special Summon this card from your hand, then Special Summon 1 \"Primal Being Token\" (Rock/LIGHT/Level 11/ATK ?/DEF ?) to your opponent's field. (This Token's ATK/DEF become the combined original ATK/DEF of the Tributed monsters.) You can only use this effect of \"Nibiru, the Primal Being\" once per turn.",
+      "TypeDeck": "Main",
+      "id": 1000002
+    },
+    {
+      "name": "Branded Fusion",
+      "rarity": "UR",
+      "image": "https://s3.duellinksmeta.com/cards/61ef0edf39cb086ec8b2b462_w360.webp",
+      "type": "Normal",
+      "desc": "Fusion Summon 1 Fusion Monster that mentions \"Fallen of Albaz\" as material from your Extra Deck, using 2 monsters from your hand, Deck, or field as Fusion Material. You cannot Special Summon monsters from the Extra Deck, except Fusion Monsters, the turn you activate this card. You can only activate 1 \"Branded Fusion\" per turn.",
+      "TypeDeck": "Main",
+      "id": 1000003
+    },
+    {
+      "name": "Sky Striker Ace - Raye",
+      "TypeDeck": "Main",
+      "rarity": "UR",
+      "image": "https://s3.duellinksmeta.com/cards/60c2b3aca0e24f2d54a53648_w360.webp",
+      "type": "Normal",
+      "desc": "(Quick Effect): You can Tribute this card; Special Summon 1 Sky Striker Ace monster from your Extra Deck to the Extra Monster Zone. While this card is in your GY, if a face-up Sky Striker Ace Link Monster you control is destroyed by battle, or leaves the field because of an opponent's card effect: You can Special Summon this card. You can only use each effect of Sky Striker Ace - Raye once per turn.",
+      "id": 1000004
+    },
+    {
+      "name": "Ghost Belle & Haunted Mansion",
+      "TypeDeck": "Main",
+      "rarity": "UR",
+      "image": "https://s3.duellinksmeta.com/cards/60c2b3aaa0e24f2d54a52373_w360.webp",
+      "type": "Normal",
+      "desc": "When a card or effect is activated that includes any of these effects (Quick Effect): You can discard this card; negate that activation. ● Add a card(s) from the GY to the hand, Deck, and/or Extra Deck. ● Special Summon a Monster Card(s) from the GY. ● Banish a card(s) from the GY. You can only use this effect of \"Ghost Belle & Haunted Mansion\" once per turn.",
+      "id": 1000005
+    },
+    {
+      "name": "Sky Striker Ace - Roze",
+      "TypeDeck": "Main",
+      "rarity": "R",
+      "image": "https://s3.duellinksmeta.com/cards/60c2b3aca0e24f2d54a53649_w360.webp",
+      "type": "Normal",
+      "desc": "If a \"Sky Striker Ace\" monster(s) is Normal or Special Summoned, except \"Sky Striker Ace - Roze\" (except during the Damage Step): You can Special Summon this card from your hand. If an opponent's monster in the Extra Monster Zone is destroyed by battle, or leaves the field because of your card effect, while this card is in your GY: You can Special Summon this card, then you can negate the effects of 1 face-up monster your opponent controls, until the end of this turn. You can only use each effect of \"Sky Striker Ace - Roze\" once per turn.",
+      "id": 1000006
+    },
+    {
+      "name": "Endymion, the Mighty Master of Magic",
+      "TypeDeck": "Main",
+      "rarity": "UR",
+      "image": "https://s3.duellinksmeta.com/cards/60c2b3aaa0e24f2d54a51feb_w360.webp",
+      "type": "Pendulum",
+      "desc": "[ Pendulum Effect ] You can remove 6 Spell Counters from your field; Special Summon this card from the Pendulum Zone, then count the number of cards you control that can have a Spell Counter, destroy up to that many cards on the field, and if you do, place Spell Counters on this card equal to the number of cards destroyed. You can only use this effect of \"Endymion, the Mighty Master of Magic\" once per turn. [ Monster Effect ] Once per turn, when a Spell/Trap Card or effect is activated (Quick Effect): You can return 1 card you control with a Spell Counter to the hand, and if you do, negate the activation, and if you do that, destroy it. Then, you can place the same number of Spell Counters on this card that the returned card had. While this card has a Spell Counter, your opponent cannot target it with card effects, also it cannot be destroyed by your opponent's card effects. When this card with a Spell Counter is destroyed by battle: You can add 1 Normal Spell from your Deck to your hand.",
+      "id": 1000007
+    }
+  ],
+  "Library": [
+    {
+      "id": 1675170211656,
+      "name": "Tearlament",
+      "TypeDeck": "Extra",
+      "rarity": "UR",
+      "image": "https://s3.duellinksmeta.com/cards/62e034bf5f0fd2a1fe376de1_w360.webp",
+      "type": "Fusion",
+      "desc": "Other Aqua monsters you control cannot be destroyed by battle. You can only use each of the following effects of Tearlaments Rulkallos once per turn. When your opponent activates a card or effect that includes an effect that Special Summons a monster(s) (Quick Effect): You can negate the activation, and if you do, destroy it, then, send 1 Tearlaments card from your hand or face-up field to the GY. If this Fusion Summoned card is sent to the GY by a card effect: You can Special Summon this card."
+    },
+    {
+      "id": 1675170211657,
+      "name": "Odd-Eyes Venom fusion",
+      "TypeDeck": "Extra",
+      "rarity": "SR",
+      "image": "https://s3.duellinksmeta.com/cards/60c2b3aba0e24f2d54a52f45_w360.webp",
+      "type": "Fusion",
+      "desc": "[ Pendulum Effect ] Once per turn: You can target 1 Fusion Monster you control; it gains 1000 ATK for each monster your opponent controls, until the end of this turn. [ Monster Effect ] 1 \"Starving Venom\" monster + 1 \"Odd-Eyes\" monster Must be Fusion Summoned, and can then be Pendulum Summoned. Once per turn: You can target 1 face-up monster your opponent controls; until the End Phase, this card gains ATK equal to its ATK, and if it does, this card's name becomes that monster's original name, and replace this effect with that monster's original effects. If this card in the Monster Zone is destroyed: You can Special Summon 1 monster from your Pendulum Zone, and if you do, place this card in your Pendulum Zone."
+    },
+    {
+      "id": 1675170211658,
+      "name": "Galaxy-Eyes Cipher Blade Dragon",
+      "TypeDeck": "Extra",
+      "rarity": "SR",
+      "image": "https://s3.duellinksmeta.com/cards/60c2b3aaa0e24f2d54a522bb_w360.webp",
+      "type": "XYZ",
+      "desc": "You can also Xyz Summon this card by using a Rank 8 Galaxy-Eyes Xyz Monster you control as material. (Transfer its materials to this card.) Cannot be used as material for an Xyz Summon. Once per turn: You can detach 1 material from this card, then target 1 card on the field; destroy it. If this Xyz Summoned card you control, is destroyed by battle with an opponent's attacking monster, or destroyed by an opponent's card effect, and sent to your GY: You can target 1 Galaxy-Eyes Cipher Dragon in your GY; Special Summon it."
+    },
+    {
+      "id": 1675170211659,
+      "name": "Galaxy-Eyes Cipher Dragon",
+      "TypeDeck": "Extra",
+      "rarity": "UR",
+      "image": "https://s3.duellinksmeta.com/cards/60c2b3aaa0e24f2d54a522bc_w140.webp",
+      "type": "XYZ",
+      "desc": "Once per turn: You can detach 1 Xyz Material from this card, then target 1 face-up monster your opponent controls; monsters you control cannot attack your opponent directly for the rest of this turn, except this card, also take control of the targeted monster until the End Phase, but while this effect is applied, it has its effects negated, its ATK becomes 3000, also its name becomes Galaxy-Eyes Cipher Dragon."
+    },
+    {
+      "id": 1675170211660,
+      "name": "Sky Striker Ace - Raye",
+      "TypeDeck": "Main",
+      "rarity": "UR",
+      "image": "https://s3.duellinksmeta.com/cards/60c2b3aca0e24f2d54a53648_w360.webp",
+      "type": "Normal",
+      "desc": "(Quick Effect): You can Tribute this card; Special Summon 1 Sky Striker Ace monster from your Extra Deck to the Extra Monster Zone. While this card is in your GY, if a face-up Sky Striker Ace Link Monster you control is destroyed by battle, or leaves the field because of an opponent's card effect: You can Special Summon this card. You can only use each effect of Sky Striker Ace - Raye once per turn."
+    },
+    {
+      "id": 1675170211661,
+      "name": "Sky Striker Ace - Kagari",
+      "TypeDeck": "Extra",
+      "rarity": "UR",
+      "image": "https://s3.duellinksmeta.com/cards/60c2b3aca0e24f2d54a53645_w360.webp",
+      "type": "Link",
+      "desc": "If this card is Special Summoned: You can target 1 Sky Striker Spell in your GY; add it to your hand. Gains 100 ATK for each Spell in your GY. You can only Special Summon Sky Striker Ace - Kagari(s) once per turn."
+    },
+    {
+      "name": "Evil★Twin's Trouble Sunny",
+      "rarity": "UR",
+      "image": "https://s3.duellinksmeta.com/cards/6126b426f9d784006595dd1b_w360.webp",
+      "type": "Link",
+      "desc": "2+ monsters, including an \"Evil★Twin\" monster (Quick Effect): You can Tribute this card; Special Summon up to 1 \"Ki-sikil\" monster and up to 1 \"Lil-la\" monster from your GY. You can banish this card from your GY and send 1 \"Evil★Twin\" monster from your hand, Deck, or face-up field to the GY; send 1 card on the field to the GY. You can only use each effect of \"Evil★Twin's Trouble Sunny\" once per turn.",
+      "TypeDeck": "Extra",
+      "id": 1675170211662
+    },
+    {
+      "name": "Evil★Twin Ki-sikil",
+      "rarity": "SR",
+      "image": "https://s3.duellinksmeta.com/cards/60c2b3aaa0e24f2d54a5204a_w360.webp",
+      "type": "Link",
+      "desc": "2 monsters, including a \"Ki-sikil\" monster If this card is Special Summoned and you control a \"Lil-la\" monster: You can draw 1 card. During the Main Phase, if you do not control a \"Lil-la\" monster (Quick Effect): You can Special Summon 1 \"Lil-la\" monster from your GY, also you cannot Special Summon monsters from the Extra Deck for the rest of this turn, except Fiend monsters. You can only use each effect of \"Evil★Twin Ki-sikil\" once per turn.",
+      "TypeDeck": "Extra",
+      "id": 1675170211663
+    },
+    {
+      "name": "Ghost Belle & Haunted Mansion",
+      "rarity": "UR",
+      "image": "https://s3.duellinksmeta.com/cards/60c2b3aaa0e24f2d54a52373_w360.webp",
+      "type": "Normal",
+      "desc": "When a card or effect is activated that includes any of these effects (Quick Effect): You can discard this card; negate that activation. ● Add a card(s) from the GY to the hand, Deck, and/or Extra Deck. ● Special Summon a Monster Card(s) from the GY. ● Banish a card(s) from the GY. You can only use this effect of \"Ghost Belle & Haunted Mansion\" once per turn.",
+      "TypeDeck": "Main",
+      "id": 1675170211664
+    },
+    {
+      "name": "Sky Striker Ace - Roze",
+      "rarity": "R",
+      "image": "https://s3.duellinksmeta.com/cards/60c2b3aca0e24f2d54a53649_w360.webp",
+      "type": "Normal",
+      "desc": "If a \"Sky Striker Ace\" monster(s) is Normal or Special Summoned, except \"Sky Striker Ace - Roze\" (except during the Damage Step): You can Special Summon this card from your hand. If an opponent's monster in the Extra Monster Zone is destroyed by battle, or leaves the field because of your card effect, while this card is in your GY: You can Special Summon this card, then you can negate the effects of 1 face-up monster your opponent controls, until the end of this turn. You can only use each effect of \"Sky Striker Ace - Roze\" once per turn.",
+      "TypeDeck": "Main",
+      "id": 1675170211665
+    },
+    {
+      "name": "Sky Striker Ace - Hayate",
+      "rarity": "R",
+      "image": "https://s3.duellinksmeta.com/cards/60c2b3aca0e24f2d54a53644_w360.webp",
+      "type": "Link",
+      "desc": "1 non-WIND \"Sky Striker Ace\" monster You can only Special Summon \"Sky Striker Ace - Hayate(s)\" once per turn. This card can attack directly. After damage calculation, if this card battled: You can send 1 \"Sky Striker\" card from your Deck to the GY.",
+      "TypeDeck": "Extra",
+      "id": 1675170211666
+    },
+    {
+      "name": "Accesscode Talker",
+      "rarity": "UR",
+      "image": "https://s3.duellinksmeta.com/cards/60c2b3a9a0e24f2d54a5139a_w360.webp",
+      "type": "Link",
+      "desc": "Your opponent cannot activate cards or effects in response to this card's effect activations. If this card is Link Summoned: You can target 1 Link Monster that was used as material for its Link Summon; this card gains ATK equal to that monster's Link Rating x 1000. You can banish 1 Link Monster from your field or GY; destroy 1 card your opponent controls, also for the rest of this turn, you cannot banish monsters with that same Attribute to activate this effect of \"Accesscode Talker\".",
+      "TypeDeck": "Extra",
+      "id": 1675170211667
+    },
+    {
+      "name": "Endymion, the Mighty Master of Magic",
+      "rarity": "UR",
+      "image": "https://s3.duellinksmeta.com/cards/60c2b3aaa0e24f2d54a51feb_w360.webp",
+      "type": "Pendulum",
+      "desc": "[ Pendulum Effect ] You can remove 6 Spell Counters from your field; Special Summon this card from the Pendulum Zone, then count the number of cards you control that can have a Spell Counter, destroy up to that many cards on the field, and if you do, place Spell Counters on this card equal to the number of cards destroyed. You can only use this effect of \"Endymion, the Mighty Master of Magic\" once per turn. [ Monster Effect ] Once per turn, when a Spell/Trap Card or effect is activated (Quick Effect): You can return 1 card you control with a Spell Counter to the hand, and if you do, negate the activation, and if you do that, destroy it. Then, you can place the same number of Spell Counters on this card that the returned card had. While this card has a Spell Counter, your opponent cannot target it with card effects, also it cannot be destroyed by your opponent's card effects. When this card with a Spell Counter is destroyed by battle: You can add 1 Normal Spell from your Deck to your hand.",
+      "TypeDeck": "Main",
+      "id": 1675170211668
+    },
+    {
+      "name": "El Shaddoll Construct",
+      "rarity": "UR",
+      "image": "https://s3.duellinksmeta.com/cards/60c2b3aaa0e24f2d54a51f4a_w360.webp",
+      "type": "Fusion",
+      "desc": "1 \"Shaddoll\" monster + 1 LIGHT monster Must first be Fusion Summoned. If this card is Special Summoned: You can send 1 \"Shaddoll\" card from your Deck to the GY. At the start of the Damage Step, if this card battles a Special Summoned monster: Destroy that monster. If this card is sent to the GY: You can target 1 \"Shaddoll\" Spell/Trap in your GY; add it to your hand.",
+      "TypeDeck": "Extra",
+      "id": 1675170211669
+    }
+  ],
+  "TierList": [
+    {
+      "name": "Mathmech",
+      "image": "https://imgserv.duellinksmeta.com/v2/mdm/deck-type/Mathmech?portrait=true&width=140",
+      "power": 14.8,
+      "tier": 1
+    },
+    {
+      "name": "Swordsoul Tenyi",
+      "image": "https://imgserv.duellinksmeta.com/v2/mdm/deck-type/Swordsoul%20Tenyi?portrait=true&width=140",
+      "power": 12.7,
+      "tier": 1
+    },
+    {
+      "name": "Branded Despia",
+      "image": "https://imgserv.duellinksmeta.com/v2/mdm/deck-type/Branded%20Despia?portrait=true&width=140",
+      "power": 8.6,
+      "tier": 2
+    },
+    {
+      "name": "Adamancipator",
+      "image": "https://imgserv.duellinksmeta.com/v2/mdm/deck-type/Adamancipator?portrait=true&width=140",
+      "power": 5.1,
+      "tier": 3
+    },
+    {
+      "name": "Runick",
+      "image": "https://imgserv.duellinksmeta.com/v2/mdm/deck-type/Runick?portrait=true&width=140",
+      "power": 5,
+      "tier": 3
+    }
+  ],
+  "ExtraDeck": [
+    {
+      "name": "Odd-Eyes Venom fusion",
+      "TypeDeck": "Extra",
+      "rarity": "SR",
+      "image": "https://s3.duellinksmeta.com/cards/60c2b3aba0e24f2d54a52f45_w360.webp",
+      "type": "Fusion",
+      "desc": "[ Pendulum Effect ] Once per turn: You can target 1 Fusion Monster you control; it gains 1000 ATK for each monster your opponent controls, until the end of this turn. [ Monster Effect ] 1 \"Starving Venom\" monster + 1 \"Odd-Eyes\" monster Must be Fusion Summoned, and can then be Pendulum Summoned. Once per turn: You can target 1 face-up monster your opponent controls; until the End Phase, this card gains ATK equal to its ATK, and if it does, this card's name becomes that monster's original name, and replace this effect with that monster's original effects. If this card in the Monster Zone is destroyed: You can Special Summon 1 monster from your Pendulum Zone, and if you do, place this card in your Pendulum Zone.",
+      "id": 2
+    },
+    {
+      "name": "Galaxy-Eyes Cipher Blade Dragon",
+      "TypeDeck": "Extra",
+      "rarity": "UR",
+      "image": "https://s3.duellinksmeta.com/cards/60c2b3aaa0e24f2d54a522bb_w360.webp",
+      "type": "XYZ",
+      "desc": "You can also Xyz Summon this card by using a Rank 8 Galaxy-Eyes Xyz Monster you control as material. (Transfer its materials to this card.) Cannot be used as material for an Xyz Summon. Once per turn: You can detach 1 material from this card, then target 1 card on the field; destroy it. If this Xyz Summoned card you control, is destroyed by battle with an opponent's attacking monster, or destroyed by an opponent's card effect, and sent to your GY: You can target 1 Galaxy-Eyes Cipher Dragon in your GY; Special Summon it.",
+      "id": 3
+    },
+    {
+      "name": "Underworld Goddess of the Closed World",
+      "rarity": "UR",
+      "image": "https://s3.duellinksmeta.com/cards/60c2b3aca0e24f2d54a53c69_w360.webp",
+      "type": "Link",
+      "desc": "You can also use 1 monster your opponent controls as material to Link Summon this card. If this card is Link Summoned: You can negate the effects of all face-up monsters your opponent currently controls. This Link Summoned card is unaffected by your opponent's activated effects, unless they target this card. Once per turn, when your opponent activates a card or effect that Special Summons a monster(s) from the GY (Quick Effect): You can negate the activation.",
+      "TypeDeck": "Extra",
+      "id": 4
+    },
+    {
+      "name": "Evil★Twin's Trouble Sunny",
+      "rarity": "UR",
+      "image": "https://s3.duellinksmeta.com/cards/6126b426f9d784006595dd1b_w360.webp",
+      "type": "Link",
+      "desc": "2+ monsters, including an \"Evil★Twin\" monster (Quick Effect): You can Tribute this card; Special Summon up to 1 \"Ki-sikil\" monster and up to 1 \"Lil-la\" monster from your GY. You can banish this card from your GY and send 1 \"Evil★Twin\" monster from your hand, Deck, or face-up field to the GY; send 1 card on the field to the GY. You can only use each effect of \"Evil★Twin's Trouble Sunny\" once per turn.",
+      "TypeDeck": "Extra",
+      "id": 1675170211662
+    },
+    {
+      "name": "Evil★Twin Ki-sikil",
+      "rarity": "SR",
+      "image": "https://s3.duellinksmeta.com/cards/60c2b3aaa0e24f2d54a5204a_w360.webp",
+      "type": "Link",
+      "desc": "2 monsters, including a \"Ki-sikil\" monster If this card is Special Summoned and you control a \"Lil-la\" monster: You can draw 1 card. During the Main Phase, if you do not control a \"Lil-la\" monster (Quick Effect): You can Special Summon 1 \"Lil-la\" monster from your GY, also you cannot Special Summon monsters from the Extra Deck for the rest of this turn, except Fiend monsters. You can only use each effect of \"Evil★Twin Ki-sikil\" once per turn.",
+      "TypeDeck": "Extra",
+      "id": 1675170211663
+    },
+    {
+      "name": "Sky Striker Ace - Hayate",
+      "rarity": "R",
+      "image": "https://s3.duellinksmeta.com/cards/60c2b3aca0e24f2d54a53644_w360.webp",
+      "type": "Link",
+      "desc": "1 non-WIND \"Sky Striker Ace\" monster You can only Special Summon \"Sky Striker Ace - Hayate(s)\" once per turn. This card can attack directly. After damage calculation, if this card battled: You can send 1 \"Sky Striker\" card from your Deck to the GY.",
+      "TypeDeck": "Extra",
+      "id": 1675170211666
+    },
+    {
+      "id": 1675170211661,
+      "name": "Sky Striker Ace - Kagari",
+      "TypeDeck": "Extra",
+      "rarity": "UR",
+      "image": "https://s3.duellinksmeta.com/cards/60c2b3aca0e24f2d54a53645_w360.webp",
+      "type": "Link",
+      "desc": "If this card is Special Summoned: You can target 1 Sky Striker Spell in your GY; add it to your hand. Gains 100 ATK for each Spell in your GY. You can only Special Summon Sky Striker Ace - Kagari(s) once per turn."
+    },
+    {
+      "name": "Tearlament",
+      "TypeDeck": "Extra",
+      "rarity": "UR",
+      "image": "https://s3.duellinksmeta.com/cards/62e034bf5f0fd2a1fe376de1_w360.webp",
+      "type": "Fusion",
+      "desc": "Other Aqua monsters you control cannot be destroyed by battle. You can only use each of the following effects of Tearlaments Rulkallos once per turn. When your opponent activates a card or effect that includes an effect that Special Summons a monster(s) (Quick Effect): You can negate the activation, and if you do, destroy it, then, send 1 Tearlaments card from your hand or face-up field to the GY. If this Fusion Summoned card is sent to the GY by a card effect: You can Special Summon this card.",
+      "id": 1675170211667
+    },
+    {
+      "name": "El Shaddoll Construct",
+      "TypeDeck": "Extra",
+      "rarity": "UR",
+      "image": "https://s3.duellinksmeta.com/cards/60c2b3aaa0e24f2d54a51f4a_w360.webp",
+      "type": "Fusion",
+      "desc": "1 \"Shaddoll\" monster + 1 LIGHT monster Must first be Fusion Summoned. If this card is Special Summoned: You can send 1 \"Shaddoll\" card from your Deck to the GY. At the start of the Damage Step, if this card battles a Special Summoned monster: Destroy that monster. If this card is sent to the GY: You can target 1 \"Shaddoll\" Spell/Trap in your GY; add it to your hand.",
+      "id": 1675170211668
+    }
+  ],
+  "deckStore": [
+    {}
+  ]
+}
