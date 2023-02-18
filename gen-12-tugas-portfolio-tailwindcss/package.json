@@ -4,5 +4,8 @@
   },
   "dependencies": {
     "npm": "^9.2.0"
+  },
+  "scripts" : {
+    "startTailwind" :"tailwindcss -i ./css/input.css -o ./css/output.css --watch"
   }
 }
