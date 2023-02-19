@@ -149,8 +149,6 @@ function DeckBuilder() {
             <input className="bg-white"
                 type="text"
                 placeholder="Seacrh"
-                value={search}
-                onChange={handleSearch}
             />
               {library.map((lib) => (
                 <div key={lib.id} className="w-36 mx-5 mb-9">
