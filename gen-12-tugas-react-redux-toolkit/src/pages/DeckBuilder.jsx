@@ -192,7 +192,7 @@ function DeckBuilder() {
               <div className="flex justify-center w-1/2 mt-4">
                 <img src={defaultData.image} className="h-80" />
               </div>
-              <div className="text-center flex justify-center w-1/2 bg-orange-600 mt-4">
+              <div className="text-center flex flex-col justify-center w-1/2 bg-orange-600 mt-4">
                 <div><p className="text-2xl">Type : {defaultData.type}</p></div>
                 <div>
                 <p className="text-2xl">Rarity : {defaultData.rarity}</p></div>
