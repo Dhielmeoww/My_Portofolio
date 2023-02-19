@@ -21,49 +21,50 @@ function DeckBuilder() {
 
   //search Option
   const handleSearch = (e) => {
-    setSearch(e.target.value)
-  }
+    setSearch(e.target.value);
+  };
 
   const libRow = (lib) => (
     <div key={lib.id} className="w-36 mx-5 mb-9">
-    <img src={lib.image} alt="" className="h-48" />
-    <div className="h-[130px] mt-9">
-      <p>
-        <b>Name</b> : {lib.name}
-      </p>
-      <p>
-        <b>Rarity</b> : {lib.rarity}
-      </p>
-      <p>
-        <b>Type</b> : {lib.type}
-      </p>
-    </div>
-    <div className="flex justify-center mt-2">
-      <div>
-        <button
-          className="bg-slate-100 text-black rounded-xl mt-2 p-2"
-          onClick={() => Desc(`${lib.desc}`)}
-        >
-          {" "}
-          Description{" "}
-        </button>
+      <img src={lib.image} alt="" className="h-48" />
+      <div className="h-[130px] mt-9">
+        <p>
+          <b>Name</b> : {lib.name}
+        </p>
+        <p>
+          <b>Rarity</b> : {lib.rarity}
+        </p>
+        <p>
+          <b>Type</b> : {lib.type}
+        </p>
       </div>
-      <div>
-        <button
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold mt-2 py-2 px-4 rounded"
-          onClick={() => addCardByList(lib)}
-        >
-          Add
-        </button>
+      <div className="flex justify-center mt-2">
+        <div>
+          <button
+            className="bg-slate-100 text-black rounded-xl mt-2 p-2"
+            onClick={() => Desc(`${lib.desc}`)}
+          >
+            {" "}
+            Description{" "}
+          </button>
+        </div>
+        <div>
+          <button
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold mt-2 py-2 px-4 rounded"
+            onClick={() => addCardByList(lib)}
+          >
+            Add
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-)
+  );
 
-const handleCard = (library, search) => {
-  return library.filter((lib) => lib.name.toLowerCase().includes(search.toLowerCase()))
+  const handleCard = (library, search) => {
+    return library
+      .filter((lib) => lib.name.toLowerCase().includes(search.toLowerCase()))
       .map(libRow);
-}
+  };
 
   //Manage Card
   const time = new Date().getTime();
@@ -152,14 +153,12 @@ const handleCard = (library, search) => {
             <input
               className="bg-white text-black"
               type="text"
+              value={search}
+              onChange={handleSearch}
               placeholder="Seacrh"
             />
             <div className="flex flex-wrap flex-row justify-center mt-9 w-full">
-
-
-            {handleSearch ? handleCard(library, search) : library.map(libRow)}
-
-
+              {handleSearch ? handleCard(library, search) : library.map(libRow)}
             </div>
           </div>
           <hr className="mt-10" />
