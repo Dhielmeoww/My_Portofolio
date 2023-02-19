@@ -187,7 +187,7 @@ function DeckBuilder() {
               <div>
                 <p className="flex text-3xl text-center">{defaultData.name}</p>
               </div>
-              <div className="flex flex-row">
+              <div className="flex flex-col">
                 <div className="ml-5 w-52">
                 <img src={defaultData.image} className="h-80" />
                 </div>
