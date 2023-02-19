@@ -148,7 +148,7 @@ function DeckBuilder() {
             {" "}
             Build Your Own Deck
           </h1>
-          <div className="container mb-10">
+          <div className="container flex flex-row mb-10">
             <h2 className="font-bold text-2xl text-center">Library</h2>
             <input
               className="bg-white text-black"
@@ -157,7 +157,8 @@ function DeckBuilder() {
               onChange={handleSearch}
               placeholder="Seacrh"
             />
-            <div className="mt-9 w-full overflow-auto">
+            <div className=""></div>
+            <div className="flex flex-row flex-wrap mt-9 w-[500px] h-[500px] overflow-auto">
               {handleSearch ? handleCard(library, search) : library.map(libRow)}
             </div>
           </div>
