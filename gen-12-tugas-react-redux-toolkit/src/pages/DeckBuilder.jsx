@@ -8,10 +8,11 @@ import { SearchContext } from "../../Utility/SearchProvider";
 function DeckBuilder() {
   //
   const [defaultData, setDefaultData] = useState({
-    name: "",
-    rarity: "none",
-    image: "https://upload.wikimedia.org/wikipedia/en/2/2b/Yugioh_Card_Back.jpg",
-    type: "none",
+    name: "MONSTER NAME",
+    rarity: "None",
+    image:
+      "https://upload.wikimedia.org/wikipedia/en/2/2b/Yugioh_Card_Back.jpg",
+    type: "None",
     desc: "",
     TypeDeck: "",
   });
@@ -183,23 +184,19 @@ function DeckBuilder() {
             </div>
           </div>
           <div className="container flex flex-row justify-center mb-10">
-            <div className="flex flex-col content-center w-2/5 h-[800px] mx-5 mt-9 bg-slate-500">
+            <div className="flex flex-col justify-center w-2/5 h-[800px] mx-5 mt-9 bg-slate-500">
               <div className="text-center">
                 <p className="text-3xl">{defaultData.name}</p>
               </div>
-              <div className="flex flex-row">
-                <div className="ml-5 w-2/5 bg-teal-400">
-                <img src={defaultData.image} className="h-80" />
+              <div className="flex flex-row ml-5">
+                <div className="ml-5">
+                  <img src={defaultData.image} className="h-80" />
                 </div>
-                <div className="flex w-3/5 flex-col mx-4">
-                  <div className="text-center">
+                <div className="text-center">
                   <p>Type : {defaultData.type}</p>
                   <p>Rarity : {defaultData.rarity}</p>
-                  </div>
-                  <div>
-                    Description : {defaultData.desc}
-                  </div>
                 </div>
+                <div>Description : {defaultData.desc}</div>
               </div>
             </div>
             <div className="flex flex-row flex-wrap justify-center mt-9 w-3/5 h-[800px] overflow-auto">
