@@ -38,7 +38,7 @@ function AdminPage() {
   const edit = async (library) => {
     console.log(library);
     const res = await axios.get(
-      "http://localhost:3000/Library/" + library.id,
+      "https://pushy-perpetual-steam.glitch.me/Library/" + library.id,
       library
     );
     setFormInput(res.data);
