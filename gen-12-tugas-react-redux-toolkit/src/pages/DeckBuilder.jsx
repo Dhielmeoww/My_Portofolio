@@ -184,8 +184,8 @@ function DeckBuilder() {
             </div>
           </div>
           <div className="container flex flex-row justify-center mb-10">
-            <div className="flex flex-col justify-center w-2/5 h-[800px] mx-5 mt-9 bg-slate-500">
-              <div className="text-center mt-7">
+            <div className="flex flex-col pt-9 w-2/5 h-[800px] mx-5 mt-9 bg-slate-500">
+              <div className="text-center">
                 <p className="text-3xl">{defaultData.name}</p>
               </div>
               <div className="flex justify-center mt-4">
@@ -193,9 +193,9 @@ function DeckBuilder() {
               </div>
               <div className="text-center">
                 <p>Type : {defaultData.type}</p>
-                <p className="p-7">Rarity : {defaultData.rarity}</p>
+                <p>Rarity : {defaultData.rarity}</p>
               </div>
-              <div>Description : {defaultData.desc}</div>
+              <div><p>Description : {defaultData.desc}</p></div>
             </div>
 
             <div className="flex flex-row flex-wrap justify-center mt-9 w-3/5 h-[800px] overflow-auto">
