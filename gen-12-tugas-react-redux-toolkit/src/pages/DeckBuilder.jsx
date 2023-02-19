@@ -175,9 +175,12 @@ function DeckBuilder() {
               placeholder="Seacrh"
             />
           <div className="container flex flex-row mb-10">
-            <div className="w-2/5 h-[800px] mr-3 mt-9">
-              <img src={defaultData.image} className="h-48"/>
-              {defaultData.name}
+            <div className="flex justify-center w-2/5 h-[800px] mr-3 mt-9">
+              <div><p className="flex text-3xl">{defaultData.name}</p>
+                <img src={defaultData.image} className="h-80"/></div>
+
+              
+              
             </div>
             <div className="flex flex-row flex-wrap mt-9 w-3/5 h-[800px] overflow-auto">
               {handleSearch ? handleCard(library, search) : library.map(libRow)}
