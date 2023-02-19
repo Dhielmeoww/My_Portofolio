@@ -24,8 +24,9 @@ function DeckBuilder() {
   // const [formInput, setFormInput] = useState({ ...defaultInput });
 
   //Get Data
-  const { card, setCard, exDeck, setExDeck, library, setLibrary, search, setSearch } =
+  const { card, setCard, exDeck, setExDeck, library, setLibrary } =
     useContext(UserContext);
+    const {search, setSearch} = useContext(SearchContext)
   const { getAllCard } = useContext(UserContext);
   const { getLibraryCard } = useContext(UserContext);
   const { getExtraDeck } = useContext(UserContext);
@@ -118,7 +119,7 @@ function DeckBuilder() {
   )
 
   const handleCard = (library, search) => {
-    return library.filter((card) => card.name().includes(search()))
+    return library.filter((card) => card.name.toLowerCase().includes(search.toLowerCase()))
         .map(libRow);
 }
 
