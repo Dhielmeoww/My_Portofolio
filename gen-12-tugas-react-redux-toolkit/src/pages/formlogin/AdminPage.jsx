@@ -58,11 +58,11 @@ function AdminPage() {
 
     if (isEdit) {
       await axios.put(
-        "http://localhost:3000/Library/" + formInput.id,
+        "https://pushy-perpetual-steam.glitch.me/Library/" + formInput.id,
         formInput
       );
     } else {
-      await axios.post("http://localhost:3000/Library", formInput);
+      await axios.post("https://pushy-perpetual-steam.glitch.me/Library", formInput);
     }
 
     setFormInput({ ...defaultInput });
