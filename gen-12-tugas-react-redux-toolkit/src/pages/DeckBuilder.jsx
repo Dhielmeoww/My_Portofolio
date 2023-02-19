@@ -42,10 +42,10 @@ function DeckBuilder() {
       desc: card.desc,
     };
     if (card.TypeDeck == "Main") {
-      await axios.post("http://localhost:3000/users", newCard);
+      await axios.post("https://pushy-perpetual-steam.glitch.me//users", newCard);
       getAllCard();
     } else if (card.TypeDeck == "Extra") {
-      await axios.post("http://localhost:3000/ExtraDeck", newCard);
+      await axios.post("https://pushy-perpetual-steam.glitch.me//ExtraDeck", newCard);
       getExtraDeck();
       console.log(time);
     }
@@ -67,13 +67,13 @@ function DeckBuilder() {
     console.log(card);
     if (card.TypeDeck == "Main") {
       const res = await axios.delete(
-        "http://localhost:3000/users/" + card.id,
+        "https://pushy-perpetual-steam.glitch.me//users/" + card.id,
         card
       );
       getAllCard();
     } else if (card.TypeDeck == "Extra") {
       const res = await axios.delete(
-        "http://localhost:3000/ExtraDeck/" + card.id,
+        "https://pushy-perpetual-steam.glitch.me//ExtraDeck/" + card.id,
         card
       );
       getExtraDeck();

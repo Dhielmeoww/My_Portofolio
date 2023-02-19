@@ -9,17 +9,17 @@ export default function DeckProvider(props) {
   const [library, setLibrary] = useState([]);
 
   const getAllCard = async () => {
-    const res = await axios.get("http://localhost:3000/users");
+    const res = await axios.get("https://pushy-perpetual-steam.glitch.me//users");
     setCard(res.data);
   };
 
   const getLibraryCard = async () => {
-    const res = await axios.get("http://localhost:3000/Library");
+    const res = await axios.get("https://pushy-perpetual-steam.glitch.me//Library");
     setLibrary(res.data);
   };
 
   const getExtraDeck = async () => {
-    const res = await axios.get("http://localhost:3000/ExtraDeck");
+    const res = await axios.get("https://pushy-perpetual-steam.glitch.me//ExtraDeck");
     setExDeck(res.data);
   };
 
