@@ -4,23 +4,11 @@ import { Link, useNavigate } from "react-router-dom";
 import { UserContext } from "../../Utility/DeckProvider";
 import { ThemeContext } from "../../Utility/DarkMode";
 
-// const defaultInput = {
-//   name: "",
-//   rarity: "",
-//   image: "",
-//   type: "",
-//   desc: "",
-//   TypeDeck: "",
-// };
-
 function DeckBuilder() {
   //Modal
 
   //dark Theme
   const { theme, toogleDarkMode } = useContext(ThemeContext);
-
-  //form
-  // const [formInput, setFormInput] = useState({ ...defaultInput });
 
   //Get Data
   const { card, setCard, exDeck, setExDeck, library, setLibrary } =
@@ -51,17 +39,6 @@ function DeckBuilder() {
     }
   };
 
-  ////edit
-
-  // const edit = async (library) => {
-  //   console.log(library);
-  //   const res = await axios.get(
-  //     "http://localhost:3000/Library/" + library.id,
-  //     library
-  //   );
-  //   setFormInput(res.data);
-  // };
-
   //delete
   const deleteCard = async (card) => {
     console.log(card);
@@ -79,33 +56,6 @@ function DeckBuilder() {
       getExtraDeck();
     }
   };
-
-  // //Handling Form
-
-  // const handleFormInput = (type, value) =>
-  //   setFormInput({ ...formInput, [type]: value });
-
-  ////for users
-  // const handleSubmit = async (evt) => {
-  //   evt.preventDefault();
-  //   console.log(formInput.TypeDeck);
-
-  //   const isEdit = !!formInput.id;
-
-  //   if (isEdit) {
-  //     await axios.put(
-  //       "http://localhost:3000/Library/" + formInput.id,
-  //       formInput
-  //     );
-  //   } else {
-  //     await axios.post("http://localhost:3000/Library", formInput);
-  //   }
-
-  //   setFormInput({ ...defaultInput });
-  //   getExtraDeck();
-  //   getAllCard();
-  //   getLibraryCard();
-  // };
 
   //navigate
   const navigate = useNavigate()
@@ -145,11 +95,11 @@ function DeckBuilder() {
           </h1>
           <div className="container mb-10">
             <h2 className="font-bold text-2xl text-center">Library</h2>
-            <div className="flex flex-wrap flex-row justify-center mt-9 w-full">
             <input className="bg-white"
                 type="text"
                 placeholder="Seacrh"
             />
+            <div className="flex flex-wrap flex-row justify-center mt-9 w-full">
               {library.map((lib) => (
                 <div key={lib.id} className="w-36 mx-5 mb-9">
                   <img src={lib.image} alt="" className="h-48" />
