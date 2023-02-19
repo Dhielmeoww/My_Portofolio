@@ -146,6 +146,12 @@ function DeckBuilder() {
           <div className="container mb-10">
             <h2 className="font-bold text-2xl text-center">Library</h2>
             <div className="flex flex-wrap flex-row justify-center mt-9 w-full">
+            <input className="bg-white"
+                type="text"
+                placeholder="Seacrh"
+                value={search}
+                onChange={handleSearch}
+            />
               {library.map((lib) => (
                 <div key={lib.id} className="w-36 mx-5 mb-9">
                   <img src={lib.image} alt="" className="h-48" />
