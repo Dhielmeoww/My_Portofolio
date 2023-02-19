@@ -157,7 +157,7 @@ function DeckBuilder() {
               onChange={handleSearch}
               placeholder="Seacrh"
             />
-            <div className="flex flex-wrap flex-row justify-center mt-9 w-full overflow-auto">
+            <div className="flex flex-row justify-center mt-9 w-full overflow-auto">
               {handleSearch ? handleCard(library, search) : library.map(libRow)}
             </div>
           </div>
