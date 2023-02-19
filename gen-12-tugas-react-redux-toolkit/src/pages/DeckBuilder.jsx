@@ -9,9 +9,9 @@ function DeckBuilder() {
   //
   const [defaultData, setDefaultData] = useState({
     name: "",
-    rarity: "",
-    image: "",
-    type: "",
+    rarity: "none",
+    image: "https://upload.wikimedia.org/wikipedia/en/2/2b/Yugioh_Card_Back.jpg",
+    type: "none",
     desc: "",
     TypeDeck: "",
   });
@@ -184,8 +184,8 @@ function DeckBuilder() {
           </div>
           <div className="container flex flex-row justify-center mb-10">
             <div className="flex flex-col w-2/5 h-[800px] mx-5 mt-9 bg-slate-500">
-              <div>
-                <p className="flex text-3xl text-center">{defaultData.name}</p>
+              <div className="text-center">
+                <p className="flex text-3xl">{defaultData.name}</p>
               </div>
               <div className="flex flex-row">
                 <div className="ml-5 w-2/5 bg-teal-400">
@@ -202,7 +202,7 @@ function DeckBuilder() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-row flex-wrap mt-9 w-3/5 h-[800px] overflow-auto">
+            <div className="flex flex-row flex-wrap justify-center mt-9 w-3/5 h-[800px] overflow-auto">
               {handleSearch ? handleCard(library, search) : library.map(libRow)}
             </div>
           </div>
