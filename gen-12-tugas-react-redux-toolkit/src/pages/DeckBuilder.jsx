@@ -177,7 +177,7 @@ function DeckBuilder() {
             
               <div className=" flex justify-center rounded-md mt-4">
                 <input
-                  className="bg-white rounded-md text-black w-[500px]"
+                  className="bg-white rounded-md text-black w-[500px] h-[40px] p-3"
                   type="text"
                   value={search}
                   onChange={handleSearch}
