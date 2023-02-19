@@ -162,7 +162,7 @@ function DeckBuilder() {
         }
       >
         <div>
-        <div className="flex justify-center">
+        <div className="flex flex-col justify-center">
           <div>
           <h1 className="container font-bold text-2xl text-center">
             {" "}
@@ -178,8 +178,8 @@ function DeckBuilder() {
               placeholder="Seacrh"
             /></div>
         </div>
-          <div className="container flex flex-row mb-10">
-            <div className="flex justify-center w-2/5 h-[800px] mr-3 mt-9 bg-slate-500">
+          <div className="container flex flex-row justify-center mb-10">
+            <div className="flex justify-center w-2/5 h-[800px] mr-4 mt-9 bg-slate-500">
               <div><p className="flex text-3xl">{defaultData.name}</p>
                 </div>
                 <div>
