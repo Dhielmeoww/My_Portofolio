@@ -170,7 +170,7 @@ function DeckBuilder() {
           </h1>
           <h2 className="font-bold text-2xl text-center">Library</h2>
           </div>
-          <div><input
+          <div className="flex justify-center"><input
               className="bg-white text-black"
               type="text"
               value={search}
@@ -179,7 +179,7 @@ function DeckBuilder() {
             /></div>
         </div>
           <div className="container flex flex-row justify-center mb-10">
-            <div className="flex justify-center w-2/5 h-[800px] mr-4 mt-9 bg-slate-500">
+            <div className="flex flex-col justify-center w-2/5 h-[800px] mr-4 mt-9 bg-slate-500">
               <div><p className="flex text-3xl">{defaultData.name}</p>
                 </div>
                 <div>
