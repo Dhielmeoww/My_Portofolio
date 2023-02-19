@@ -10,6 +10,7 @@ import CardDetail from "./pages/CardDetail";
 import DeckStore from "./pages/DeckStore";
 
 import DeckProvider from "../Utility/DeckProvider";
+import SearchProvider from "../Utility/SearchProvider";
 import DarkMode from "../Utility/DarkMode";
 import { Provider } from "react-redux";
 import store from "./redux/store";
@@ -43,9 +44,11 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <DarkMode>
     <DeckProvider>
+      <SearchProvider>
       <Provider store={store}>
         <RouterProvider router={router} />
       </Provider>
+      </SearchProvider>
     </DeckProvider>
   </DarkMode>
 );
