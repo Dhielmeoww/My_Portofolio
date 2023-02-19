@@ -34,7 +34,8 @@ function DeckBuilder() {
 
   const libRow = (lib) => (
     <div key={lib.id} className="w-36 mx-5 mb-9">
-      <img src={lib.image} onClick={() => cardDetail} alt="" className="h-48" />
+      <button onClick={() => cardDetail(lib)}><img src={lib.image} alt="" className="h-48" /></button>
+      
       <div className="h-[130px] mt-9">
         <p>
           <b>Name</b> : {lib.name}
