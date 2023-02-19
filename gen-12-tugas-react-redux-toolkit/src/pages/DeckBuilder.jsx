@@ -6,7 +6,15 @@ import { ThemeContext } from "../../Utility/DarkMode";
 import { SearchContext } from "../../Utility/SearchProvider";
 
 function DeckBuilder() {
-  //Modal
+  //
+  const [defaultData, setDefaultData] = useState({
+    name: "",
+    rarity: "",
+    image: "",
+    type: "",
+    desc: "",
+    TypeDeck: "",
+  });
 
   //dark Theme
   const { theme, toogleDarkMode } = useContext(ThemeContext);
@@ -26,7 +34,7 @@ function DeckBuilder() {
 
   const libRow = (lib) => (
     <div key={lib.id} className="w-36 mx-5 mb-9">
-      <img src={lib.image} alt="" className="h-48" />
+      <img src={lib.image} onClick={() => cardDetail} alt="" className="h-48" />
       <div className="h-[130px] mt-9">
         <p>
           <b>Name</b> : {lib.name}
@@ -65,6 +73,15 @@ function DeckBuilder() {
       .filter((lib) => lib.name.toLowerCase().includes(search.toLowerCase()))
       .map(libRow);
   };
+
+  const cardDetail = async (library) => {
+    console.log(library);
+    const res = await axios.get(
+      "https://pushy-perpetual-steam.glitch.me/Library/" + library.id,
+      library
+    );
+    setDefaultData(res.data);
+  }
 
   //Manage Card
   const time = new Date().getTime();
@@ -157,8 +174,11 @@ function DeckBuilder() {
               onChange={handleSearch}
               placeholder="Seacrh"
             />
-            <div className=""></div>
-            <div className="flex flex-row flex-wrap mt-9 w-[500px] h-[500px] overflow-auto">
+            <div className="w-[200px] h-[800px] mr-3">
+              {defaultData.image}
+              {defaultData.name}
+            </div>
+            <div className="flex flex-row flex-wrap mt-9 w-[800px] h-[800px] overflow-auto">
               {handleSearch ? handleCard(library, search) : library.map(libRow)}
             </div>
           </div>
