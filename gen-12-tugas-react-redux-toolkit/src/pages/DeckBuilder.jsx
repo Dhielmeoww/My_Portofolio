@@ -188,17 +188,16 @@ function DeckBuilder() {
               <div className="text-center">
                 <p className="text-3xl">{defaultData.name}</p>
               </div>
-              <div className="flex flex-row ml-5">
-                <div className="ml-5">
-                  <img src={defaultData.image} className="h-80" />
-                </div>
-                <div className="text-center">
-                  <p>Type : {defaultData.type}</p>
-                  <p>Rarity : {defaultData.rarity}</p>
-                </div>
-                <div>Description : {defaultData.desc}</div>
+              <div className="ml-5">
+                <img src={defaultData.image} className="h-80" />
               </div>
+              <div className="text-center">
+                <p>Type : {defaultData.type}</p>
+                <p>Rarity : {defaultData.rarity}</p>
+              </div>
+              <div>Description : {defaultData.desc}</div>
             </div>
+
             <div className="flex flex-row flex-wrap justify-center mt-9 w-3/5 h-[800px] overflow-auto">
               {handleSearch ? handleCard(library, search) : library.map(libRow)}
             </div>
