@@ -39,7 +39,7 @@ function DeckBuilder() {
         <img src={lib.image} alt="" className="h-48" />
       </button>
 
-      <div className="h-[130px] mt-9">
+      {/* <div className="h-[130px] mt-9">
         <p>
           <b>Name</b> : {lib.name}
         </p>
@@ -49,9 +49,9 @@ function DeckBuilder() {
         <p>
           <b>Type</b> : {lib.type}
         </p>
-      </div>
+      </div> */}
       <div className="flex justify-center mt-2">
-        <div>
+        {/* <div>
           <button
             className="bg-slate-100 text-black rounded-xl mt-2 p-2"
             onClick={() => Desc(`${lib.desc}`)}
@@ -59,7 +59,7 @@ function DeckBuilder() {
             {" "}
             Description{" "}
           </button>
-        </div>
+        </div> */}
         <div>
           <button
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold mt-2 py-2 px-4 rounded"
@@ -67,7 +67,7 @@ function DeckBuilder() {
           >
             Add
           </button>
-        </div>
+        </div><div></div>
       </div>
     </div>
   );
@@ -201,7 +201,7 @@ function DeckBuilder() {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col justify-center mt-7">
+              <div className="flex flex-col justify-center mt-7 p-5">
                 <div>
                   <p className="text-justify">{defaultData.desc}</p>
                 </div>
