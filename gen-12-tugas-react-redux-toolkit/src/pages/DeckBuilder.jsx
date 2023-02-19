@@ -118,7 +118,7 @@ function DeckBuilder() {
   )
 
   const handleCard = (library, search) => {
-    return library.filter((card) => card.name.toLowerCase().includes(search.toLowerCase()))
+    return library.filter((card) => card.name().includes(search()))
         .map(libRow);
 }
 
