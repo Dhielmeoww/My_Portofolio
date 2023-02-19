@@ -191,7 +191,7 @@ const handleSearch = (e) => {
           </h1>
           <div className="container mb-10">
             <h2 className="font-bold text-2xl text-center">Library</h2>
-            <input className="my-car-search"
+            <input className="bg-white"
                 type="text"
                 placeholder="Cari berdasarkan merk / model"
                 value={search}
