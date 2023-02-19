@@ -162,21 +162,27 @@ function DeckBuilder() {
         }
       >
         <div>
+        <div className="flex justify-center">
+          <div>
           <h1 className="container font-bold text-2xl text-center">
             {" "}
             Build Your Own Deck
           </h1>
           <h2 className="font-bold text-2xl text-center">Library</h2>
-          <input
+          </div>
+          <div><input
               className="bg-white text-black"
               type="text"
               value={search}
               onChange={handleSearch}
               placeholder="Seacrh"
-            />
+            /></div>
+        </div>
           <div className="container flex flex-row mb-10">
-            <div className="flex justify-center w-2/5 h-[800px] mr-3 mt-9">
+            <div className="flex justify-center w-2/5 h-[800px] mr-3 mt-9 bg-slate-500">
               <div><p className="flex text-3xl">{defaultData.name}</p>
+                </div>
+                <div>
                 <img src={defaultData.image} className="h-80"/></div>
 
               
