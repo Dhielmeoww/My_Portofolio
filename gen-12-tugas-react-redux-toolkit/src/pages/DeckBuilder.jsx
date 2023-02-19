@@ -184,21 +184,29 @@ function DeckBuilder() {
             </div>
           </div>
           <div className="container flex flex-row justify-center mb-10">
-            <div className="flex flex-col pt-9 w-2/5 h-[800px] mx-5 mt-9 bg-slate-500">
+            <div className="flex flex-col pt-9 w-2/5 h-[800px] mx-5 mt-9 bg-slate-500 rounded-3xl">
               <div className="text-center">
                 <p className="text-3xl">{defaultData.name}</p>
               </div>
               <div className="flex flex-row">
-              <div className="flex justify-center w-1/2 mt-4">
-                <img src={defaultData.image} className="h-80" />
+                <div className="flex justify-center w-1/2 mt-4">
+                  <img src={defaultData.image} className="h-80" />
+                </div>
+                <div className="text-center flex flex-col justify-center w-1/2 mt-4 mr-5">
+                  <div>
+                    <p className="text-2xl">Type : {defaultData.type}</p>
+                  </div>
+                  <div>
+                    <p className="text-2xl">Rarity : {defaultData.rarity}</p>
+                  </div>
+                </div>
               </div>
-              <div className="text-center flex flex-col justify-center w-1/2 mt-4 mr-5">
-                <div><p className="text-2xl">Type : {defaultData.type}</p></div>
+              <div className="flex flex-col justify-center mt-7">
                 <div>
-                <p className="text-2xl">Rarity : {defaultData.rarity}</p></div>
+                  <p className="text-justify">{defaultData.desc}</p>
+                </div>
+                <div></div>
               </div>
-              </div>
-              <div className="text-center mt-7"><p>{defaultData.desc}</p></div>
             </div>
 
             <div className="flex flex-row flex-wrap justify-center mt-9 w-3/5 h-[800px] overflow-auto">
