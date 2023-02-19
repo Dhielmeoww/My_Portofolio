@@ -5,7 +5,7 @@ export default function TierList() {
   const [tier, setTier] = useState([]);
 
   const getTier = async () => {
-    const res = await axios.get("http://localhost:3000/TierList");
+    const res = await axios.get("https://pushy-perpetual-steam.glitch.me/TierList");
     setTier(res.data);
   };
 
