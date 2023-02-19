@@ -188,13 +188,13 @@ function DeckBuilder() {
                 <p className="flex text-3xl text-center">{defaultData.name}</p>
               </div>
               <div className="flex flex-row">
-                <div className="ml-5">
+                <div className="ml-5 w-52">
                 <img src={defaultData.image} className="h-80" />
                 </div>
                 <div className="flex flex-col mx-4">
                   <div className="text-center">
-                  Type : {defaultData.type}
-                  Rarity : {defaultData.rarity}
+                  <p>Type : {defaultData.type}</p>
+                  <p>Rarity : {defaultData.rarity}</p>
                   </div>
                   <div>
                     Description : {defaultData.desc}
