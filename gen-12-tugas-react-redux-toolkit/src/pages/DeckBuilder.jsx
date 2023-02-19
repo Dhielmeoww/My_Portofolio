@@ -166,17 +166,17 @@ function DeckBuilder() {
             {" "}
             Build Your Own Deck
           </h1>
-          <div className="container flex flex-row mb-10">
-            <h2 className="font-bold text-2xl text-center">Library</h2>
-            <input
+          <h2 className="font-bold text-2xl text-center">Library</h2>
+          <input
               className="bg-white text-black"
               type="text"
               value={search}
               onChange={handleSearch}
               placeholder="Seacrh"
             />
+          <div className="container flex flex-row mb-10">
             <div className="w-[200px] h-[800px] mr-3">
-              {defaultData.image}
+              <img src={defaultData.image} className="h-48"/>
               {defaultData.name}
             </div>
             <div className="flex flex-row flex-wrap mt-9 w-[800px] h-[800px] overflow-auto">
