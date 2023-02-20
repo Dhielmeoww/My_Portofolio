@@ -163,21 +163,22 @@ function DeckBuilder() {
               <h2 className="font-bold text-2xl text-center">Library</h2>
             </div>
             
-              <div className=" flex justify-center rounded-md mt-4">
+          </div>
+          <div className="container flex flex-row justify-center mb-10">
+            <div className="flex flex-col pt-9 w-2/5">
+            <div className=" flex justify-start rounded-md mx-5">
                 <input
-                  className="bg-white rounded-md text-black w-[500px] h-[40px] p-3"
+                  className="bg-white rounded-md text-black w-[500px] h-[70px] p-3"
                   type="text"
                   value={search}
                   onChange={handleSearch}
                   placeholder="Search"
                 />
-                <button onClick={()=> setSearch("")} className="bg-white rounded-lg w-[100px] text-black m-3">Reset</button>
+                <button onClick={()=> setSearch("")} className="bg-white rounded-lg w-[100px] h-[70px] text-black mx-3">Reset</button>
               
             </div>
-          </div>
-          <div className="container flex flex-row justify-center mb-10">
-            <div className="flex flex-col pt-9 w-2/5 h-[800px] mx-5 mt-9 bg-slate-500 rounded-3xl">
-              <div className="text-center">
+            <div className="flex flex-col h-[800px] mx-5 mt-4 bg-slate-500 rounded-3xl">
+              <div className="text-center mt-3">
                 <p className="text-3xl">{defaultData.name}</p>
               </div>
               <div className="flex flex-row">
@@ -200,6 +201,9 @@ function DeckBuilder() {
                 <div></div>
               </div>
             </div>
+              
+            </div>
+            
 
             <div className="flex flex-col mt-9 w-3/5 h-[800px]">
               <div className="flex flex-row justify-center bg-fuchsia-600 rounded-lg mx-3 h-[70px] p-3 sticky">
@@ -211,7 +215,7 @@ function DeckBuilder() {
                 <button onClick={()=>setSearch("Normal")} className="bg-white text-black w-[100px] rounded-xl mx-3">Normal</button>
                 
               </div>
-            <div className="flex flex-row flex-wrap justify-center mt-9 h-[600px]  overflow-auto">
+            <div className="flex flex-row flex-wrap justify-center mt-9 h-[700px]  overflow-auto">
               {handleSearch ? handleCard(library, search) : library.map(libRow)}
             </div>
             </div>
