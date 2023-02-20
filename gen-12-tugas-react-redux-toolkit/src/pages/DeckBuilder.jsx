@@ -17,6 +17,13 @@ function DeckBuilder() {
     TypeDeck: "",
   });
 
+  //handle3card
+  // const handleDisable = () => {
+  //   card.filter((kartu) => kartu.name === card.name)
+  //   exDeck.filter((kartu) => kartu.name === exDeck.name)
+  //   console.log(card.length, exDeck.length)
+  // }
+
   //dark Theme
   const { theme, toogleDarkMode } = useContext(ThemeContext);
 
@@ -39,27 +46,7 @@ function DeckBuilder() {
         <img src={lib.image} alt="" className="h-48" />
       </button>
 
-      {/* <div className="h-[130px] mt-9">
-        <p>
-          <b>Name</b> : {lib.name}
-        </p>
-        <p>
-          <b>Rarity</b> : {lib.rarity}
-        </p>
-        <p>
-          <b>Type</b> : {lib.type}
-        </p>
-      </div> */}
-      <div className="flex justify-center mt-2">
-        {/* <div>
-          <button
-            className="bg-slate-100 text-black rounded-xl mt-2 p-2"
-            onClick={() => Desc(`${lib.desc}`)}
-          >
-            {" "}
-            Description{" "}
-          </button>
-        </div> */}
+      <div className="flex justify-center mt-2"> 
         <div>
           <button
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold mt-2 py-2 px-4 rounded"
