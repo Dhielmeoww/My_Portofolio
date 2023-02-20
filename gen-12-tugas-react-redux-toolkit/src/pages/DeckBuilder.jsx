@@ -41,7 +41,7 @@ function DeckBuilder() {
   };
 
   const libRow = (lib) => (
-    <div key={lib.id} className="w-36 mx-2 mb-9 bg-slate-200 p-3 rounded-2xl">
+    <div key={lib.id} className="w-36 mx-5 mb-9 h-[280px] bg-slate-200 p-3 rounded-2xl">
       <button onClick={() => cardDetail(lib)}>
         <img src={lib.image} alt="" className="h-48" />
       </button>
@@ -50,7 +50,7 @@ function DeckBuilder() {
         <div>
           <button
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold mt-2 py-2 px-4 rounded"
-            onClick={() => addCardByList(lib)}
+            onClick={() => addCardByList(lib)} 
           >
             Add
           </button>
@@ -62,7 +62,8 @@ function DeckBuilder() {
 
   const handleCard = (library, search) => {
     return library
-      .filter((lib) => lib.name.toLowerCase().includes(search.toLowerCase()))
+      .filter((lib) => lib.name.toLowerCase().includes(search.toLowerCase()) || lib.type.toLowerCase().includes(search.toLowerCase()) 
+      || lib.rarity.toLowerCase().includes(search.toLowerCase()))
       .map(libRow);
   };
 
@@ -170,6 +171,7 @@ function DeckBuilder() {
                   onChange={handleSearch}
                   placeholder="Search"
                 />
+                <button onClick={()=> setSearch("")} className="bg-white rounded-lg w-[100px] text-black m-3">Reset</button>
               
             </div>
           </div>
@@ -199,9 +201,22 @@ function DeckBuilder() {
               </div>
             </div>
 
-            <div className="flex flex-row flex-wrap justify-center mt-9 w-3/5 h-[800px] overflow-auto">
+            <div className="flex flex-col mt-9 w-3/5 h-[800px]">
+              <div className="flex flex-row justify-center bg-fuchsia-600 rounded-lg mx-3 h-[70px] p-3 sticky">
+                <button onClick={()=>setSearch("Link")} className="bg-white text-black w-[100px] rounded-xl mx-3">Link</button>
+                <button onClick={()=>setSearch("Fusion")} className="bg-white text-black w-[100px] rounded-xl mx-3">Fusion</button>
+                <button onClick={()=>setSearch("Synchro")} className="bg-white text-black w-[100px] rounded-xl mx-3">Synchro</button>
+                <button onClick={()=>setSearch("Pendulum")} className="bg-white text-black w-[100px] rounded-xl mx-3">Pendulum</button>
+                <button onClick={()=>setSearch("Ritual")} className="bg-white text-black w-[100px] rounded-xl mx-3">Ritual</button>
+                <button onClick={()=>setSearch("Normal")} className="bg-white text-black w-[100px] rounded-xl mx-3">Normal</button>
+                
+              </div>
+            <div className="flex flex-row flex-wrap justify-center mt-9 h-[600px]  overflow-auto">
               {handleSearch ? handleCard(library, search) : library.map(libRow)}
             </div>
+            </div>
+
+            
           </div>
           <hr className="mt-10" />
           <h1 className="font-bold text-2xl my-10 text-center"> Main Deck</h1>
