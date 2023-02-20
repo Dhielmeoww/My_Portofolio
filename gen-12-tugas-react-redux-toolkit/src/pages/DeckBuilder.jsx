@@ -165,7 +165,7 @@ function DeckBuilder() {
             
           </div>
           <div className="container flex flex-row justify-center mb-10">
-            <div className="flex flex-col pt-9 w-2/5">
+            <div className="flex flex-col pt-9 w-[700px]">
             <div className=" flex justify-start rounded-md mx-5">
                 <input
                   className="bg-white rounded-md text-black w-[500px] h-[70px] p-3"
@@ -205,8 +205,8 @@ function DeckBuilder() {
             </div>
             
 
-            <div className="flex flex-col mt-9 w-3/5 h-[800px]">
-              <div className="flex flex-row justify-center bg-fuchsia-600 rounded-lg mx-3 h-[70px] p-3 sticky">
+            <div className="flex flex-col mt-9 mx-3 w-[880px] h-[880px] bg-white rounded-lg">
+              <div className="flex flex-row justify-center bg-fuchsia-600 rounded-lg h-[70px] p-3 sticky">
                 <button onClick={()=>setSearch("Link")} className="bg-white text-black w-[100px] rounded-xl mx-3">Link</button>
                 <button onClick={()=>setSearch("Fusion")} className="bg-white text-black w-[100px] rounded-xl mx-3">Fusion</button>
                 <button onClick={()=>setSearch("Synchro")} className="bg-white text-black w-[100px] rounded-xl mx-3">Synchro</button>
@@ -215,7 +215,7 @@ function DeckBuilder() {
                 <button onClick={()=>setSearch("Normal")} className="bg-white text-black w-[100px] rounded-xl mx-3">Normal</button>
                 
               </div>
-            <div className="flex flex-row flex-wrap justify-center mt-9 h-[700px]  overflow-auto">
+            <div className="flex flex-row flex-wrap justify-center mt-9 h-[700px] w-full overflow-auto">
               {handleSearch ? handleCard(library, search) : library.map(libRow)}
             </div>
             </div>
