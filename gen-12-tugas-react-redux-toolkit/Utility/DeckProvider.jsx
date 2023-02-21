@@ -7,6 +7,8 @@ export default function DeckProvider(props) {
   const [card, setCard] = useState([]);
   const [exDeck, setExDeck] = useState([]);
   const [library, setLibrary] = useState([]);
+  const [page, setPage] = useState(1)
+  const [lastPage, setLastPage] = useState(0)
 
   const getAllCard = async () => {
     const res = await axios.get("https://pushy-perpetual-steam.glitch.me//users");
@@ -14,8 +16,38 @@ export default function DeckProvider(props) {
   };
 
   const getLibraryCard = async () => {
-    const res = await axios.get("https://pushy-perpetual-steam.glitch.me//Library");
+    const res = await axios.get('https://transparent-canyon-woolen.glitch.me/data?_page=' + page);
+    // console.log(res.headers.link, typeof res.headers.link)
+    // console.log(res.headers.link.split(','));
+    // console.log(res.headers.link.split(',')[2].split(';'));
+    // console.log(res.headers.link.split(',')[2].split(';')[0].substring(1, res.headers.link.split(',')[2].split(';')[0].length-1));
+
+
+    const index = res.headers.link
+    .split(',')[2] 
+    .split(';')[0]
+    .substring(2, res.headers.link.split(',')[2].split(';')[0].length-1)
+    .indexOf('=')
+
+    setLastPage(
+      res.headers.link
+      .split(',')[2]
+      .split(';')[0]
+      .substring(2, res.headers.link.split(',')[2].split(';')[0].length
+      -1)
+      .substring(
+        index + 1,
+        res.headers.link
+      .split(',')[2]
+      .split(';')[0]
+      .substring(2, res.headers.link.split(',')[2].split(';')[0].length
+      -1).length
+      )
+    );
+    console.log(lastPage)
+
     setLibrary(res.data);
+    console.log(res)
   };
 
   const getExtraDeck = async () => {
@@ -24,6 +56,7 @@ export default function DeckProvider(props) {
   };
 
   const shareValue = {
+    page, setPage, lastPage, setLastPage,
     card,
     setCard,
     exDeck,
