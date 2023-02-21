@@ -8,28 +8,32 @@ function CardDetail() {
   const { cardId } = useParams();
   const [data, setData] = useState({}); 
   const { theme, toogleDarkMode } = useContext(ThemeContext);
-
-  
+  const [image, setImage] = useState('')
 
   const getDataMain = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/users/" + cardId);
+      const res = await axios.get("https://pushy-perpetual-steam.glitch.me//users/" + cardId);
       console.log(res.status);
       setData(res.data);
+      setImage(res.data.card_images[0].image_url)
     } catch (error) {
       if (error.response.status == 404) {
         const res = await axios.get(
-          "http://localhost:3000/ExtraDeck/" + cardId
+          "https://pushy-perpetual-steam.glitch.me//ExtraDeck/" + cardId
         );
         console.log(res.status);
         setData(res.data);
+        setImage(res.data.card_images[0].image_url)
       }
     }
   };
 
+  console.log("ini data :",data);
+  console.log("ini data image : " ,data.card_images);
+
   useEffect(() => {
     getDataMain();
-    console.log(data);
+    // console.log(data);
   }, []);
 
   return (
@@ -42,7 +46,7 @@ function CardDetail() {
       >
         <div className="container flex justify-center pt-16">
           <div>
-            <img src={data.image} alt="" className="h-[500px]" />
+            <img src={image} alt="" className="h-[500px]" />
           </div>
           <div className="h-9 w-[900px] text-2xl px-7">
             <h1 className="font-bold text-5xl mb-10 text-orange-600">{data.name}</h1>

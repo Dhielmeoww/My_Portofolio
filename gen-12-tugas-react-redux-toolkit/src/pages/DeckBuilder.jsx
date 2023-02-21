@@ -14,6 +14,7 @@ function DeckBuilder() {
     frameType: "",
     desc: "",
     race: "",
+    level: "",
     archetype: "",
     card_sets: [
       {
@@ -65,6 +66,8 @@ function DeckBuilder() {
     setExDeck,
     library,
     setLibrary,
+    // searchLibrary,
+    // setSearchLibrary
   } = useContext(UserContext);
   const { search, setSearch } = useContext(SearchContext);
   const { getAllCard } = useContext(UserContext);
@@ -107,8 +110,8 @@ function DeckBuilder() {
             .toLowerCase()
 
             .includes(search.toLowerCase())
-        )
-        // || lib.frameType.toLowerCase().includes(search.toLowerCase())
+        
+        || lib.frameType.toLowerCase().includes(search.toLowerCase()))
         // || lib.rarity.toLowerCase().includes(search.toLowerCase()))
         .map(libRow)
     );
@@ -134,14 +137,15 @@ function DeckBuilder() {
       frameType: card.frameType,
       desc: card.desc,
       race: card.race,
+      level: card.level,
       archetype: card.archetype,
       card_sets: [
         {
-          set_name: card.set_name,
-          set_code: card.set_code,
-          set_rarity: card.set_rarity,
-          set_rarity_code: card.set_rarity_code,
-          set_price: card.set_price,
+          set_name: card.card_sets[0].set_name,
+          set_code: card.card_sets[0].set_code,
+          set_rarity: card.card_sets[0].set_rarity,
+          set_rarity_code: card.card_sets[0].set_rarity_code,
+          set_price: card.card_sets[0].set_price,
         },
       ],
       card_images: [
@@ -294,12 +298,28 @@ function DeckBuilder() {
                       className="h-80"
                     />
                   </div>
-                  <div className="text-center flex flex-col justify-center w-1/2 mt-4 mr-5">
-                    <div>
-                      <p className="text-2xl">Type : {defaultData.type}</p>
+                  <div className="text-center flex flex-col  justify-center w-1/2 mt-4 mr-5">
+                    <div className="flex flex-row  justify-center ">
+                    <div className="flex flex-col mx-5 bg-orange-800 rounded-md w-40">
+                      <p className="text-xl">Type : </p>
+                      <p className="text-xl">{defaultData.type}</p>
                     </div>
+                    <div className="flex flex-col mx-5 bg-orange-800 rounded-md w-40">
+                      <p className="text-xl">Archetype : </p>
+                      <p className="text-xl">{defaultData.archetype}</p>
+                    </div>
+
+                    </div>
+                    
+                    {/* <div>
+                      <p className="text-2xl">Rarity : {defaultData.card_sets[0].set_rarity}</p>
+                    </div> */}
                     <div>
-                      <p className="text-2xl">Rarity : {defaultData.rarity}</p>
+                      <p className="text-2xl text-justify mx-5 my-5">Race : {defaultData.race}</p>
+                    </div>
+                    
+                    <div>
+                      <p className="text-2xl text-justify mx-5">Level/Rank/Link : {defaultData.level}</p>
                     </div>
                   </div>
                 </div>
@@ -315,25 +335,25 @@ function DeckBuilder() {
             <div className="flex flex-col mt-9 mx-3 w-[880px] h-[880px] bg-white rounded-lg">
               <div className="flex flex-row justify-center bg-fuchsia-600 rounded-lg h-[70px] p-3 sticky">
                 <button
-                  onClick={() => setSearch("Link")}
+                  onClick={() => setSearch("link")}
                   className="bg-white text-black w-[100px] rounded-xl mx-3"
                 >
                   Link
                 </button>
                 <button
-                  onClick={() => setSearch("Fusion")}
+                  onClick={() => setSearch("fusion")}
                   className="bg-white text-black w-[100px] rounded-xl mx-3"
                 >
                   Fusion
                 </button>
                 <button
-                  onClick={() => setSearch("Synchro")}
+                  onClick={() => setSearch("synchro")}
                   className="bg-white text-black w-[100px] rounded-xl mx-3"
                 >
                   Synchro
                 </button>
                 <button
-                  onClick={() => setSearch("Pendulum")}
+                  onClick={() => setSearch("effect_pendulum")}
                   className="bg-white text-black w-[100px] rounded-xl mx-3"
                 >
                   Pendulum

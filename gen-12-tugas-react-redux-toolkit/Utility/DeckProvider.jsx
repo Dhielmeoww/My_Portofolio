@@ -7,6 +7,7 @@ export default function DeckProvider(props) {
   const [card, setCard] = useState([]);
   const [exDeck, setExDeck] = useState([]);
   const [library, setLibrary] = useState([]);
+  const [searchLibrary, setSeacrhLibrary] = useState([]);
   const [page, setPage] = useState(1)
   const [lastPage, setLastPage] = useState(0)
 
@@ -14,6 +15,11 @@ export default function DeckProvider(props) {
     const res = await axios.get("https://pushy-perpetual-steam.glitch.me//users");
     setCard(res.data);
   };
+
+  // const getsearchLibrary = async () => {
+  //   const res = await axios.get("https://transparent-canyon-woolen.glitch.me/data");
+  //   setSearchCard(res.data);
+  // };
 
   const getLibraryCard = async () => {
     const res = await axios.get('https://transparent-canyon-woolen.glitch.me/data?_page=' + page);
@@ -57,6 +63,7 @@ export default function DeckProvider(props) {
 
   const shareValue = {
     page, setPage, lastPage, setLastPage,
+    // searchLibrary, setSeacrhLibrary,
     card,
     setCard,
     exDeck,
