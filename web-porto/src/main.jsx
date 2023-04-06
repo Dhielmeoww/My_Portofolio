@@ -8,6 +8,7 @@ import Edukasi from "./Pages/Edukasi";
 import Keahlian from "./Pages/Keahlian";
 import Pengalaman from "./Pages/Pengalaman";
 import Kontak from "./Pages/Kontak";
+import Porto from "./Pages/Porto";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
       { path: "Keahlian", element: <Keahlian /> },
       { path: "Kontak", element: <Kontak /> },
       { path: "Exp", element: <Pengalaman /> },
+      { path: "Porto", element: <Porto /> },
     ],
   },
 ]);

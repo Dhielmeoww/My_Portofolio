@@ -17,6 +17,7 @@ function App() {
       <Link to="/Keahlian" className='text-xl font-bold mt-8'>Keahlian</Link>
       <Link to="/Exp" className='text-xl font-bold mt-8'>Pengalaman</Link>
       <Link to="/Kontak" className='text-xl font-bold mt-8'>Kontak</Link>
+      <Link to="/Porto" className='text-xl font-bold mt-8'>Portofolio</Link>
     </div>
     <div className='w-4/5 h-screen bg-[#F1F1F1]'>
       <Outlet/>

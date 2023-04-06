@@ -9,6 +9,7 @@ import {
   SiPostgresql,
   DiPhotoshop,
   SiAdobepremierepro,
+  AiFillBug
 } from "react-icons/all";
 
 export default function Keahlian() {
@@ -37,6 +38,16 @@ export default function Keahlian() {
             <p className="text-center my-4">
               {" "}
               JavaScript :
+              <br />
+              Junior
+            </p>
+          </div>
+
+          <div className="border-4 border-solid p-4 mx-5 mt-5 flex-col justify-center">
+            <AiFillBug className="h-[100px] w-[120px]" />
+            <p className="text-center my-4">
+              {" "}
+              SQA (Manual) :
               <br />
               Junior
             </p>
