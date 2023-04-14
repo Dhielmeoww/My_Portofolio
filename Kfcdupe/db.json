@@ -1,0 +1,71 @@
+{
+  "Special": [
+    {
+      "id": 1,
+      "title": "Snack Bucket 2 BBQ",
+      "image": "https://files.kfcku.com/uploads/media/dummy/food/thumbnail/kfc-web_sbspicysour-2_t_1.png"
+    },
+    {
+      "title": "Chicken Strips BBQ",
+      "image": "https://files.kfcku.com/uploads/media/food-menu/spesial/thumbnail/kfc-web_chicken-stripsbbq._t.png",
+      "id": 2
+    },
+    {
+      "title": "Winger BBQ",
+      "image": "https://files.kfcku.com/uploads/media/food-menu/spesial/thumbnail/kfc-web_wingerspicy_sour_t.png",
+      "id": 3
+    },
+    {
+      "title": "9 PCS Bucket",
+      "image": "https://files.kfcku.com/uploads/media/food-menu/spesial/thumbnail/kfc-web_9pc-bucket-_t.png",
+      "id": 4
+    },
+    {
+      "title": "Wings Bucket",
+      "image": "https://files.kfcku.com/uploads/media/food-menu/spesial/thumbnail/kfc-web_wingsbucket_t.png",
+      "id": 5
+    }
+  ],
+  "Combo": [
+    {
+      "id": 1,
+      "title": "Colonel Yakiniku Combo",
+      "image": "typicode"
+    }
+  ],
+  "Praktis": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "image": "typicode"
+    }
+  ],
+  "AlaCarte": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "image": "typicode"
+    }
+  ],
+  "Drink": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "image": "typicode"
+    }
+  ],
+  "Coffe": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "image": "typicode"
+    }
+  ],
+  "KidsMeal": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "image": "typicode"
+    }
+  ]
+}
