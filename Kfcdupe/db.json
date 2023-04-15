@@ -29,29 +29,59 @@
   "Combo": [
     {
       "id": 1,
-      "title": "Colonel Yakiniku Combo",
-      "image": "typicode"
+      "title": "Fish Fillet Combo",
+      "image": "https://files.kfcku.com/uploads/media/dummy/food/thumbnail/kfc-web_fishfilletc_t.png"
+    },
+    {
+      "id": 2,
+      "title": "Colonel Yakiniku combo",
+      "image": "https://files.kfcku.com/uploads/media/dummy/food/praktis/kfc-web_colonelyakinikuc_t.png"
+    }, 
+    {
+      "id": 3,
+      "title": "Kombo Krispy",
+      "image": "https://files.kfcku.com/uploads/media/food-menu/kombo/thumbnail/kfc-web_zuperkrunchc_t.png"
+    }, 
+    {
+      "id": 4,
+      "title": "Super Star 2",
+      "image": "https://files.kfcku.com/uploads/media/dummy/food/thumbnail/kfc-web_superstar-3_t.png"
+    },
+    {
+      "id": 5,
+      "title": "Super Star 3",
+      "image": "https://files.kfcku.com/uploads/media/dummy/food/thumbnail/kfc-web_superstar-3_t.png"
+    },
+    {
+      "id": 6,
+      "title": "Super Star 1",
+      "image": "https://files.kfcku.com/uploads/media/dummy/food/thumbnail/kfc-web_superstar-3_t.png"
+    },
+    {
+      "id": 7,
+      "title": "Super Krispy",
+      "image": "https://files.kfcku.com/uploads/media/dummy/food/thumbnail/kfc-web_superstar-3_t.png"
     }
   ],
   "Praktis": [
     {
       "id": 1,
-      "title": "json-server",
-      "image": "typicode"
+      "title": "Colonel Yakiniku combo",
+      "image": "https://files.kfcku.com/uploads/media/dummy/food/praktis/kfc-web_colonelyakinikuc_t.png"
     }
   ],
   "AlaCarte": [
     {
       "id": 1,
-      "title": "json-server",
-      "image": "typicode"
+      "title": "Kombo Krispy",
+      "image": "https://files.kfcku.com/uploads/media/food-menu/kombo/thumbnail/kfc-web_zuperkrunchc_t.png"
     }
   ],
   "Drink": [
     {
       "id": 1,
-      "title": "json-server",
-      "image": "typicode"
+      "title": "Super Star 2",
+      "image": "https://files.kfcku.com/uploads/media/dummy/food/thumbnail/kfc-web_superstar-3_t.png"
     }
   ],
   "Coffe": [

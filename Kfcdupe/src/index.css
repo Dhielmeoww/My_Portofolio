@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .group:hover .group-hover\:visible {
+        visibility: visible;
+      }
+      
+      .group2:hover .group2-hover\:visible {
+        visibility: visible;
+      }
+  }
