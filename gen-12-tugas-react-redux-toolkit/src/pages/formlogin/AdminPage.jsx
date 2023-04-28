@@ -230,9 +230,9 @@ function AdminPage() {
                     ease-in-out
                     m-0
                    focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                    value={formInput.card_sets[0].set_rarity}
+                    value={formInput.rarity}
                     onChange={(evt) =>
-                      handleFormInput("card_sets[0].set_rarity", evt.target.value)
+                      handleFormInput("rarity", evt.target.value)
                     }
                   >
                     <option value="">Choose Rarity</option>
