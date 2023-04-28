@@ -17,15 +17,28 @@ export default function Rootlayout() {
         <div className="text-center text-white text-xl flex justify-center content-center mx-5 mt-3">
           <div className="h-[45px] w-[100px] mx-5">
             <Link to="/" className="text-center text-xl">
-              <img
-                src={logo}
-                alt=""
-              />
+              <img src={logo} alt="" />
             </Link>
           </div>
 
           <div className="mx-5">
-            <Link to="/Layanan">Layanan</Link>
+            <Link to="/Layanan" className="peer">
+              Layanan
+            </Link>
+            <div
+              class="hidden peer-hover:flex hover:flex
+         flex-col bg-white drop-shadow-lg"
+            >
+              <a class="px-5 py-3 hover:bg-gray-200 text-red-600" href="#">
+                Drive Thru
+              </a>
+              <a class="px-5 py-3 hover:bg-gray-200 text-red-600" href="#">
+                Catering
+              </a>
+              <a class="px-5 py-3 hover:bg-gray-200 text-red-600" href="#">
+                Breakfast
+              </a>
+            </div>
           </div>
 
           <div className="mx-5">
@@ -33,7 +46,21 @@ export default function Rootlayout() {
           </div>
 
           <div className="mx-5">
-            <Link to="/Kids">Kids</Link>
+            <Link to="/Kids"  className="peer">Kids</Link>
+            <div
+              class="hidden peer-hover:flex hover:flex
+         flex-col bg-white drop-shadow-lg"
+            >
+              <a class="px-5 py-3 hover:bg-gray-200 text-red-600" href="#">
+                Birthday Ajib
+              </a>
+              <a class="px-5 py-3 hover:bg-gray-200 text-red-600" href="#">
+                Birthday Thematic
+              </a>
+              <a class="px-5 py-3 hover:bg-gray-200 text-red-600" href="#">
+                Others Party
+              </a>
+            </div>
           </div>
 
           <div className="mx-5">

@@ -9,11 +9,38 @@ import { statLogin, statLogout } from "../../redux/userSlice";
 
 const defaultInput = {
   name: "",
-  rarity: "",
-  image: "",
   type: "",
+  frameType: "",
   desc: "",
-  TypeDeck: "",
+  race: "",
+  level: "",
+  archetype: "",
+  card_sets: [
+    {
+      set_name: "",
+      set_code: "",
+      set_rarity: "",
+      set_rarity_code: "",
+      set_price: "",
+    },
+  ],
+  card_images: [
+    {
+      image_url:
+        "",
+      image_url_small: "",
+      image_url_cropped: "",
+    },
+  ],
+  card_prices: [
+    {
+      cardmarket_price: "",
+      tcgplayer_price: "",
+      ebay_price: "",
+      amazon_price: "",
+      coolstuffinc_price: "",
+    },
+  ],
 };
 
 
@@ -198,9 +225,9 @@ function AdminPage() {
                     ease-in-out
                     m-0
                    focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                    value={formInput.rarity}
+                    value={formInput.card_sets[0].set_rarity}
                     onChange={(evt) =>
-                      handleFormInput("rarity", evt.target.value)
+                      handleFormInput("card_sets[0].set_rarity", evt.target.value)
                     }
                   >
                     <option value="">Choose Rarity</option>
@@ -215,10 +242,10 @@ function AdminPage() {
                   <input
                     className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     type="text"
-                    value={formInput.image}
+                    value={formInput.card_images[0].image_url}
                     placeholder="Input URL Image"
                     onChange={(evt) =>
-                      handleFormInput("image", evt.target.value)
+                      handleFormInput("card_images[0].image_url", evt.target.value)
                     }
                   />
                 </label>
@@ -319,7 +346,7 @@ function AdminPage() {
               </form>
             </div>
             <div className="mx-12">
-              <img src={formInput.image} alt="" />
+              <img src={formInput.card_images[0].image_url} alt="" />
             </div>
           </div>
           <hr className="mt-10" />

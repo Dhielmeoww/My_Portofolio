@@ -12,14 +12,14 @@ function CardDetail() {
 
   const getDataMain = async () => {
     try {
-      const res = await axios.get("https://pushy-perpetual-steam.glitch.me//users/" + cardId);
+      const res = await axios.get("https://pushy-perpetual-steam.glitch.me/users/" + cardId);
       console.log(res.status);
       setData(res.data);
       setImage(res.data.card_images[0].image_url)
     } catch (error) {
       if (error.response.status == 404) {
         const res = await axios.get(
-          "https://pushy-perpetual-steam.glitch.me//ExtraDeck/" + cardId
+          "https://pushy-perpetual-steam.glitch.me/ExtraDeck/" + cardId
         );
         console.log(res.status);
         setData(res.data);
