@@ -129,6 +129,7 @@ function AdminPage() {
     <>
     {console.log(user)}
     {console.log(formInput)}
+    {library.length == 0 ? null :
       <div
         className={
           theme == "light"
@@ -152,7 +153,7 @@ function AdminPage() {
 
           <div className="container mb-10 pt-9">
             <h2 className="font-bold text-2xl text-center">Library</h2>
-            {library.length == 0 ? null : 
+             
             <div className="flex flex-wrap flex-row justify-center mt-9 w-full">
               {library.map((lib) => (
                 <div key={lib.id} className="w-36 mx-5 mb-9">
@@ -190,7 +191,7 @@ function AdminPage() {
                 </div>
               ))}
             </div>
-            }
+            
           </div>
           <hr />
           <div className="flex justify-center mt-16 ">
@@ -357,6 +358,7 @@ function AdminPage() {
           <hr className="mt-10" />
         </div>
       </div>
+}
     </>
   );
 }
