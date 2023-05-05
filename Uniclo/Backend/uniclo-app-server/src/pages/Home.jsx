@@ -10,14 +10,13 @@ export default function Home() {
 
   return <>
   {itemList.length ==  0 ? "Loading" : 
-  (<div className="bg-blue-200">
+  (<div className="bg-blue-200 flex flex-wrap">
     {itemList.map((item) => (
         <div key={item.id}>
             <p>name : {item.name}</p>
             <p>type : {item.type}</p>
             <p>desc : {item.desc}</p>
             <p>price : {item.price}</p>
-            <p>link image : {item.imgUrl}</p>
             <img src={item.imgUrl} alt="" />
         </div>
     ))}
