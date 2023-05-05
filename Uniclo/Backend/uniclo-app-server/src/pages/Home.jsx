@@ -13,12 +13,12 @@ export default function Home() {
   (<div className="bg-blue-200">
     {itemList.map((item) => (
         <div key={item.id}>
-            <p>name : {item.Name}</p>
-            <p>type : {item.Type}</p>
-            <p>desc : {item.Description}</p>
-            <p>price : {item.Price}</p>
-            <p>link image : {item.image_URL}</p>
-            <img src={item.image_URL} alt="" />
+            <p>name : {item.name}</p>
+            <p>type : {item.type}</p>
+            <p>desc : {item.desc}</p>
+            <p>price : {item.price}</p>
+            <p>link image : {item.imgUrl}</p>
+            <img src={item.imgUrl} alt="" />
         </div>
     ))}
   </div>)}

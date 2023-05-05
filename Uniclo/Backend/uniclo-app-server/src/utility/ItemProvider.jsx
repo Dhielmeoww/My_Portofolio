@@ -7,7 +7,7 @@ export default function ItemProvider(props) {
   const [itemList, setItemList] = useState([]);
 
   const getList = async () => {
-    const rest = await axios.get("/api/unc");
+    const rest = await axios.get("http://localhost:8080/api/items");
     setItemList(rest.data);
     console.log(itemList)
   };
