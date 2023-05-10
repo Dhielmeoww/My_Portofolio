@@ -5,31 +5,25 @@ import { BsFilm, FaGamepad, AiFillRead, FcSportsMode } from "react-icons/all";
 export default function Biodata() {
   return (
     <>
-      <div className="w-full">
-        <img src={curve} alt="" className="w-full" />
-      </div>
       <div className="flex justify-center my-10">
         <div className="flex-col">
           <p className="font-bold text-[50px] text-[#BE9E44] text-center">
             Perkenalan Diri
           </p>
-          <div className="border-4 border-solid p-4 mx-5 mt-5">
+          <div className="border-4 border-solid p-4 mx-5 mt-5 w-[900px]">
             <p className="text-xl">
-              Selamat Datang di Website personal CV-ku
-              <p>Nama saya adalh Fadhil Farhisyi, biasa dikenal dengan fadhil</p>
-              <p>Saya adalah lulusan S1 Fisika di Universitas Padjadjaran</p>
+              <p>Nama saya adalh Fadhil Farhisyi, biasa dikenal dengan fadhil.
+              Saya adalah lulusan S1 Fisika di Universitas Padjadjaran.</p><br/>
               <p>Selama berkuliah, saya aktif berorganisasi dengan menjadi bagian dari Himpunan Mahasiswa Fisika
-                atau yang biasa dikenal dengan HIFI dan menjadi bagian dari BEM KEMA FMIPA Unpad sebagai anggota
-              </p>
+                atau yang biasa dikenal dengan HIFI dan menjadi bagian dari BEM KEMA FMIPA Unpad sebagai anggota.
+              </p> <br />
               <p>
                 Perjalanan saya untuk menjadi profesional developer, saya mengikuti beberapa pelatihan (bootcamp)
-                pemrograman, diawali dengan mengikuti kelas Front-end Developer pada bootcamp Kawah Edukasi Batch II, kemudian 
+                pemrograman, diawali dengan mengikuti kelas Front-end Developer pada bootcamp Kawah Edukasi Batch II, 
                 lalu kelas Digital Marketing pada Bootcamp yang diselenggarakan oleh Candradimuka Jabar Coding Camp, dan kemudian
                 mengambil kelas Bootcamp di PT Pro Sigmaka Mandiri yaitu Fullstack Developer (Prodemy) dan Software Quality Assurance Manual Testing.
                 Disini saya banyak belajar terkait bahasa pemrograman dan teknologi Backend dan Frontend, dimulai dengan membuat Restful API, aplikasi CRUD, dan Debugging. 
-                Dengan berkembangnya pengetahuan dan kemampuan yang saya miliki, saya meyakini bahwa akan berguna untuk menjadi software engineer. Oleh karenanya, saat ini saya sedang terbuka untuk pekerjaan untuk bagian IT Developer/Software Engineer
-
-
+                Dengan berkembangnya pengetahuan dan kemampuan yang saya miliki, saya meyakini bahwa akan berguna untuk menjadi software engineer. Oleh karenanya, saat ini saya sedang terbuka untuk pekerjaan untuk bagian IT Developer/Software Engineer.
               </p>
 
 

@@ -61,7 +61,7 @@ export default function Pengalaman() {
               Junior Technical Consultant
               <br />
               <p className="font-bold">Bootcamp Fullstack Developer</p>
-              Online (3 Bulan) <br />
+              Online (4 Bulan) <br />
               November 2022 - Maret 2023
             </p>
           </div>
