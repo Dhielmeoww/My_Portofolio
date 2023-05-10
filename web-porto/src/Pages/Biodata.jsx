@@ -15,16 +15,24 @@ export default function Biodata() {
           </p>
           <div className="border-4 border-solid p-4 mx-5 mt-5">
             <p className="text-xl">
-              Perkenalkan, nama saya{" "}
-              <p className="inline font-bold">Fadhil Farhisyi</p> ...
-              <br />
-              Saya biasa dikenal atau dipanggil dengan{" "}
-              <p className="inline font-bold">nama Fadhil</p>.. <br />
-              Saya saat ini berusia 23 tahun dari waktu <br /> kelahiran saya
-              yang jatuh pada <p className="inline font-bold">3 Januari 2000</p>
-              . <br />
-              Saya berasal dari{" "}
-              <p className="inline font-bold">Cirebon, Desa Tegalwangi</p>
+              Selamat Datang di Website personal CV-ku
+              <p>Nama saya adalh Fadhil Farhisyi, biasa dikenal dengan fadhil</p>
+              <p>Saya adalah lulusan S1 Fisika di Universitas Padjadjaran</p>
+              <p>Selama berkuliah, saya aktif berorganisasi dengan menjadi bagian dari Himpunan Mahasiswa Fisika
+                atau yang biasa dikenal dengan HIFI dan menjadi bagian dari BEM KEMA FMIPA Unpad sebagai anggota
+              </p>
+              <p>
+                Perjalanan saya untuk menjadi profesional developer, saya mengikuti beberapa pelatihan (bootcamp)
+                pemrograman, diawali dengan mengikuti kelas Front-end Developer pada bootcamp Kawah Edukasi Batch II, kemudian 
+                lalu kelas Digital Marketing pada Bootcamp yang diselenggarakan oleh Candradimuka Jabar Coding Camp, dan kemudian
+                mengambil kelas Bootcamp di PT Pro Sigmaka Mandiri yaitu Fullstack Developer (Prodemy) dan Software Quality Assurance Manual Testing.
+                Disini saya banyak belajar terkait bahasa pemrograman dan teknologi Backend dan Frontend, dimulai dengan membuat Restful API, aplikasi CRUD, dan Debugging. 
+                Dengan berkembangnya pengetahuan dan kemampuan yang saya miliki, saya meyakini bahwa akan berguna untuk menjadi software engineer. Oleh karenanya, saat ini saya sedang terbuka untuk pekerjaan untuk bagian IT Developer/Software Engineer
+
+
+              </p>
+
+
             </p>
           </div>
           <div className="border-4 border-solid p-4 mx-5 my-5">

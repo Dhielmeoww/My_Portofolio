@@ -7,6 +7,7 @@ import Home from "./pages/Home.jsx";
 import ListCelana from "./pages/ListCelana.jsx";
 import ListPakaian from "./pages/ListPakaian.jsx";
 import ItemProvider from "./utility/ItemProvider.jsx";
+import FormInputProvider from "./utility/FormInputProvider.jsx";
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,9 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <ItemProvider>
-    <RouterProvider router={router} />
-  </ItemProvider>
+  <FormInputProvider>
+    <ItemProvider>
+      <RouterProvider router={router} />
+    </ItemProvider>
+  </FormInputProvider>
 );
