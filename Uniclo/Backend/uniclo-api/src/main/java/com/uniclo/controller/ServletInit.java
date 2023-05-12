@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.uniclo.model.Uniclo;
 import com.uniclo.service.UnicloService;
 
-@CrossOrigin(origins = "http://localhost:8080")
+@CrossOrigin(origins = "http://localhost:5173")
 @RestController
 @RequestMapping("api/items")
 public class ServletInit {

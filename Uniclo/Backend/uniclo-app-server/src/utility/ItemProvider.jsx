@@ -37,6 +37,11 @@ export default function ItemProvider(props) {
     setPakaianList(arr)
   }
 
+  const deleteItem = async (item) => {
+    const res = await axios.delete('http://localhost:8080/api/items/' + item.id, item)
+    getList()
+  }
+
   const shareValue = {
     itemList,
     setItemList,
@@ -45,7 +50,8 @@ export default function ItemProvider(props) {
     celanaList,
     setPakaianList,
     listPakaian,
-    pakaianList
+    pakaianList,
+    deleteItem
   };
 
   return (

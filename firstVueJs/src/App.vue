@@ -1,5 +1,6 @@
 <script setup>
 import HelloWorld from "./components/HelloWorld.vue";
+import Postingan from "./components/postingan.vue"
 </script>
 
 <template>
